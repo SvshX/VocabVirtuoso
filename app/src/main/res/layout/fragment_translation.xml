@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/upperLayout" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/translationCard"
+        android:textColor="@color/myTextPrimaryColor"
+        android:textSize="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/translationCard" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sentence"
+        android:textColor="@color/myTextPrimaryColor"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/upperLayout" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/intro"
+        android:text="@string/intro"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/lowerLayout"
+        android:layout_margin="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lowerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/conf1"
+            android:id="@+id/confButton1"
+            android:layout_weight="0.25"
+            android:background="@color/conf1"
+            android:textColor="@color/myDrawerBackground" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conf2"
+            android:id="@+id/confButton2"
+            android:layout_weight="0.25"
+            android:background="@color/conf2"
+            android:textColor="@color/myDrawerBackground" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/conf3"
+        android:id="@+id/confButton3"
+        android:layout_weight="0.25"
+        android:background="@color/conf3"
+        android:textColor="@color/myDrawerBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conf4"
+            android:id="@+id/confButton4"
+            android:layout_weight="0.25"
+            android:background="@color/conf4"
+            android:textColor="@color/myDrawerBackground" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="@string/conf5"
+            android:id="@+id/confButton5"
+            android:layout_weight="0.25"
+            android:background="@color/conf5"
+            android:textColor="@color/myDrawerBackground" />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

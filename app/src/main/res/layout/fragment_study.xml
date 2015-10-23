@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:descendantFocusability="blocksDescendants" >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/upperDashboard"
+    android:focusable="false"
+    android:layout_marginTop="24dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:focusable="false"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="left|top"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="44dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminate="true"
+        android:focusable="false"
+        android:progressDrawable="@drawable/progress_bar"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="48dp" />
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress"
+        android:id="@+id/textView2"
+        android:focusable="false"
+        android:textColor="@color/myTextPrimaryColor"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="96dp"
+        android:layout_marginLeft="120dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:focusable="false"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/upperDashboard"
+        android:layout_marginTop="72dp" />
+
+
+</RelativeLayout>

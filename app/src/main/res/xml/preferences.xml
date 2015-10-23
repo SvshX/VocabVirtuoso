@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+
+    <PreferenceCategory
+        android:title="@string/notifications"
+        android:key="pref_key_notification_settings" >
+
+        <SwitchPreference
+            android:key="switch_preference"
+            android:title="@string/push"
+            android:summary="@string/enable"
+            android:defaultValue="true"
+            android:layout="@layout/pref_layout" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/basicInfo"
+        android:key="pref_key_info_settings" >
+
+
+
+        <EditTextPreference
+            android:key="name_preference"
+            android:title=""
+            android:defaultValue=""
+            android:summary=""
+            android:layout="@layout/pref_layout" />
+        <!--    android:dialogTitle="@string/dialog_title_edittext_preference" -->
+
+
+
+    <EditTextPreference
+        android:key="email_preference"
+        android:title=""
+        android:defaultValue=""
+        android:summary=""
+        android:layout="@layout/pref_layout" />
+
+</PreferenceCategory>
+        <!--<ListPreference-->
+            <!--android:key="list_preference"-->
+            <!--android:title="@string/title_list_preference"-->
+            <!--android:dialogTitle="@string/dialog_title_list_preference"-->
+            <!--android:entries="@array/entries_list_preference"-->
+            <!--android:entryValues="@array/entryvalues_list_preference" />-->
+
+        <!--<Preference-->
+            <!--android:title="@string/title_intent_preference">-->
+            <!--<intent android:action="android.intent.action.VIEW"-->
+                <!--android:data="http://codepath.com/" />-->
+        <!--</Preference>-->
+
+    <!--<Preference-->
+        <!--android:layout="@layout/logoutButton"-->
+        <!--android:key="logoutButton"></Preference>-->
+
+
+
+</PreferenceScreen>
