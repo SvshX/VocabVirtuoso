@@ -19,6 +19,7 @@ Due to limited time, the project hasn't been fully completed for the dissertatio
 This project was single person working.
 
 Parse.com provides the cloud database to store and fetch all data related vocabulary and users.
+ParseUI has been used to allow a convenient and handy login process.
 The flashcard based app helps to efficiently learn vocabulary words applying cognitive science techniques.
 The main structure is already built that will extended to provide a learning environment with a specific repetition algorithm.
 This pattern will support your brain's maximum absorption, based on your confidence.
